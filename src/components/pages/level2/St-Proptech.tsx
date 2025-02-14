@@ -142,28 +142,28 @@ const ProptechPageData: LevelTwoPage = {
         title: "CONSULT",
         description:
           "We provide consulting services to help you identify the best Proptech solutions for your needs.",
-        icon: icons.Consult,
+        icon: icons.training,
       },
       {
         number: "02",
         title: "IMPLEMENT",
         description:
           "We help you implement Proptech solutions to improve your operations and enhance the tenant experience.",
-        icon: icons.Implement,
+        icon: icons.training,
       },
       {
         number: "03",
         title: "SUPPORT",
         description:
           "We provide ongoing support to ensure your Proptech solutions continue to meet your needs.",
-        icon: icons.Support,
+        icon: icons.training,
       },
       {
         number: "04",
         title: "INTEGRATE",
         description:
           "We help you integrate Proptech solutions into your existing systems and processes.",
-        icon: icons.Integrate,
+        icon: icons.training,
       },
     ],
   },
