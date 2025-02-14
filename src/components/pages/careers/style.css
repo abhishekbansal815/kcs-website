@@ -1,0 +1,41 @@
+.search-jobs {
+  /* Use the same vertical and right padding as the select tags */
+  padding: 0.8rem 1rem;
+  /* Increase left padding to avoid overlap with the search icon */
+  padding-left: 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  outline: none;
+  background-color: #fff; /* Ensure same background as select tags */
+}
+
+.select-location,
+.select-department,
+.select-work-type {
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  outline: none;
+  text-align-last: left;
+  color: black; /* Text color remains black */
+  background-color: #fff; /* White background */
+  appearance: none; /* Remove default arrow */
+  /* Use a larger, outlined down arrow in orange */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><polyline points='6 9 12 15 18 9' fill='none' stroke='orange' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px 14px;
+  position: relative;
+}
+
+.select-location:focus,
+.select-department:focus,
+.select-work-type:focus {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'><polyline points='6 9 12 15 18 9' fill='none' stroke='orange' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+.custom-shadow {
+  box-shadow: 0 0 10px -4px #000000;
+}

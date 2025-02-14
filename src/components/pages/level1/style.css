@@ -1,0 +1,60 @@
+a {
+  cursor: hand;
+}
+/* Custom slick dot styles */
+.slick-dots.custom-dots li {
+  margin: 0 5px; /* Reduce the horizontal space between the dots */
+}
+
+.slick-dots.custom-dots li button:before {
+  font-size: 12px; /* Adjust the size of the dots */
+  color: orange !important; /* Set the color of the dots */
+}
+
+.slick-dots.custom-dots li.slick-active button:before {
+  color: darkorange !important; /* Color for the active dot */
+}
+
+.slider-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex !important;
+  gap: 4rem;
+}
+
+.slider-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.slider-image {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduce gap between dots */
+.slick-dots {
+  bottom: 0px; /* Adjust vertical position if needed */
+}
+
+.slick-dots li {
+  margin: 0 0px; /* Reduce horizontal margin between dots */
+}
+
+.slick-dots li button:before {
+  font-size: 9px; /* Adjust dot size */
+  color: #d9d9d9;
+  opacity: 1; /* Set the dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1; /* Fully visible for active dot */
+  color: #f48e3c; /* Ensure active dot also has the same color */
+}

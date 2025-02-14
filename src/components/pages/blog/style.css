@@ -1,0 +1,52 @@
+.custom-shadow {
+  box-shadow: 0 0 10px -4px #000000;
+}
+
+.blog-card-heading,
+.author {
+  color: #11344e;
+}
+
+.blog-card-text {
+  color: #585858;
+}
+
+/* .read-more {
+  font-size: 8px;
+} */
+
+.categories,
+.tags {
+  color: #585858;
+  background-color: #f7f7f7;
+}
+
+/* Ensures the academy section spans full width */
+.academy-our-courses {
+  width: 100%;
+}
+
+/* Optional container override if not already provided by Tailwind */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  width: auto;
+}
+
+.pagination-button:hover {
+  background-color: #cc5200; /* Darker orange on hover */
+  color: white;
+}
+
+.go-to-button {
+  width: 7rem;
+}

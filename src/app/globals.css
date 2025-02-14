@@ -1,0 +1,397 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+:root {
+  /* Heading Fonts */
+  --font-heading-1: 40px Montserrat, sans-serif;
+  --font-heading-2: 32px Montserrat, sans-serif;
+  --font-heading-3: 24px Montserrat, sans-serif;
+  --font-heading-4: 24px "Montserrat SemiBold", sans-serif;
+  --font-heading-5: 18px Montserrat, sans-serif;
+  --font-heading-6: 14px Montserrat, sans-serif;
+
+  /* Body Text Fonts */
+  --font-body-1: 24px "Montserrat Medium", sans-serif;
+  --font-body-2: 16px "Montserrat Medium", sans-serif;
+  --font-body-3: 14px Montserrat, sans-serif;
+  --font-body-4: 16px "Montserrat SemiBold", sans-serif;
+  --font-body-5: 14px "Montserrat Medium", sans-serif;
+  --font-body-6: 12px "Montserrat Medium", sans-serif;
+  --font-body-7: 10px "Montserrat Medium", sans-serif;
+
+  /* Button Fonts */
+  --font-button-1: 16px Montserrat, sans-serif;
+  --font-button-2: 14px Montserrat, sans-serif;
+
+  /* Top Menu Font */
+  --font-top-menu: 12px "Montserrat SemiBold", sans-serif;
+
+  /* Tablet & Mobile */
+  --font-mobile-heading-1: 24px Montserrat, sans-serif;
+  --font-mobile-heading-2: 20px Montserrat, sans-serif;
+  --font-mobile-heading-3: 16px Montserrat, sans-serif;
+  --font-mobile-heading-4: 16px "Montserrat SemiBold", sans-serif;
+  --font-mobile-heading-5: 10px Montserrat, sans-serif;
+  --font-mobile-heading-6: 8px Montserrat, sans-serif;
+
+  --font-mobile-body-1: 14px "Montserrat Medium", sans-serif;
+  --font-mobile-body-2: 12px "Montserrat Medium", sans-serif;
+  --font-mobile-body-3: 10px Montserrat, sans-serif;
+  --font-mobile-body-4: 16px "Montserrat SemiBold", sans-serif;
+  --font-mobile-body-5: 8px "Montserrat Medium", sans-serif;
+
+  --font-mobile-button-1: 10px Montserrat, sans-serif;
+  --font-mobile-button-2: 8px Montserrat, sans-serif;
+
+  --font-mobile-top-menu: 8px "Montserrat SemiBold", sans-serif;
+
+  /* Global Colors */
+}
+
+/* Global Font Application */
+
+section {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@layer base {
+  /* Global Font Application */
+  body {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  h1 {
+    font: var(--font-heading-1);
+    line-height: 1.2;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font: var(--font-heading-2);
+    line-height: 1.2;
+    font-weight: bolder;
+  }
+
+  h3 {
+    font: var(--font-heading-3);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h4 {
+    font: var(--font-heading-4);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  h5 {
+    font: var(--font-heading-5);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  h6 {
+    font: var(--font-heading-6);
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  p {
+    font: var(--font-body-2);
+    /* line-height: 22.5px; */
+    line-height: 1.2;
+    font-weight: 500;
+    color: #585858;
+  }
+
+  p.news-text {
+    font: var(--font-body-1); /* News text */
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  p.footer-body {
+    font: var(--font-body-3); /* Footer text */
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  p.contact-body {
+    font: var(--font-body-5); /* Contact Us body text */
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  span {
+    font: var(--font-body-3); /* Default span style */
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  span.bullet-points {
+    font: var(--font-body-4);
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  span.button-text {
+    font: var(--font-button-1);
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  span.read-more-button {
+    font: var(--font-button-2);
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  ul li {
+    font: var(--font-body-5);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  @media (max-width: 1024px) {
+    h1 {
+      font: var(--font-mobile-heading-1);
+    }
+
+    h2 {
+      font: var(--font-mobile-heading-2);
+      font-weight: bolder;
+    }
+
+    h3 {
+      font: var(--font-mobile-heading-3);
+    }
+
+    h4 {
+      font: var(--font-mobile-heading-4);
+    }
+
+    h5 {
+      font: var(--font-mobile-heading-5);
+    }
+
+    h6 {
+      font: var(--font-mobile-heading-6);
+    }
+
+    p {
+      font: var(--font-mobile-body-2);
+    }
+
+    p.news-text {
+      font: var(--font-mobile-body-1);
+    }
+
+    p.footer-body {
+      font: var(--font-mobile-body-3);
+      font-weight: 500;
+    }
+
+    p.contact-body {
+      font: var(--font-mobile-body-5);
+    }
+
+    span {
+      font: var(--font-mobile-body-3);
+      font-weight: 500;
+    }
+
+    span.bullet-points {
+      font: var(--font-mobile-body-4);
+    }
+
+    span.button-text {
+      font: var(--font-mobile-button-1);
+    }
+
+    span.read-more-button {
+      font: var(--font-mobile-button-2);
+    }
+
+    ul li {
+      font: var(--font-mobile-body-5);
+    }
+  }
+}
+
+/* Global Padding and Margins */
+.global-padding {
+  padding: 16px auto;
+}
+
+.global-margin {
+ margin: 24px auto;
+}
+
+@media  (min-width: 1024px) {
+  .global-padding {
+    padding: 24px auto;
+  }
+  
+  .global-margin {
+   margin: 36px auto;
+  }
+}
+
+section,
+header,
+nav {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Pulsing Animation */
+.pulsing-icon {
+  position: relative;
+  width: 70px; /* Adjust size as needed */
+  height: 70px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f38023; /* Orange color */
+  border-radius: 50%;
+  animation: pulse-animation 2s infinite;
+  opacity: 0.6; /* Initial opacity */
+}
+
+.pulse:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.pulse:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.pulse:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.pulse1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f38023; /* Orange color */
+  border-radius: 50%;
+}
+
+.pulse2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #11344E; /* Orange color */
+  border-radius: 50%;
+  animation: pulse-animation 2s infinite;
+  opacity: 0.6; /* Initial opacity */
+}
+
+.pulse2:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.pulse2:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.pulse2:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.pulse3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #11344E; /* Orange color */
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  z-index: 10;
+  background-color: #fff; /* Same color as pulse */
+  border-radius: 50%;
+  padding: 15px; /* Adjust padding for icon size */
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pulsing-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon {
+    padding: 10px;
+  }
+}
+
+.custom-placeholder::placeholder {
+  color: #11344E;
+  opacity: 1; /* Firefox */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+/* For Internet Explorer */
+.custom-placeholder:-ms-input-placeholder {
+  color: #11344E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+/* For Microsoft Edge */
+.custom-placeholder::-ms-input-placeholder {
+  color: #11344E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .custom-placeholder::placeholder {
+    font-size: 10px;
+  }
+
+  .custom-placeholder:-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  .custom-placeholder::-ms-input-placeholder {
+    font-size: 10px;
+  }
+}
