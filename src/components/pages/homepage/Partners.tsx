@@ -115,7 +115,7 @@ const PartnerCarouselCustom = () => {
         )}
       </div>
       {itemsToShow < 4 && (
-        <div className="flex justify-center mt-4 space-x-2">
+        <div className="flex justify-center mt-4 pb-4 space-x-2">
           {Array.from({ length: totalSlides }, (_, idx) => (
             <button
               key={idx}

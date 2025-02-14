@@ -64,7 +64,7 @@ const WhoWeAre = () => {
     <section className="max-w-screen-xl global-margin">
       <div className="relative bg-white py-[6rem] md:py-[8rem] flex items-center justify-center">
         {/* Background Dots */}
-        <div className="absolute top-0 right-6 w-[60%] h-full">
+        <div className="absolute top-0 left-0 w-[60%] h-full">
           <Image
             src="/components/worldmap.png"
             alt="worldmap"
@@ -74,18 +74,7 @@ const WhoWeAre = () => {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center max-w-7xl global-padding">
-          {/* Left Image Section */}
-          <div className="mx-20 hidden sm:flex justify-center lg:justify-start">
-            <Image
-              src="/components/phone-illus-1.svg"
-              alt="Who We Are"
-              width={320}
-              height={400}
-              className="w-[225px] xl:w-[320px]"
-            />
-          </div>
-
-          {/* Right Content Section */}
+          {/* Left Content Section */}
           <section className="space-y-6">
             {/* Header */}
             <div className="flex items-center justify-center md:justify-start gap-2">
@@ -139,6 +128,17 @@ const WhoWeAre = () => {
               </Button>
             </div>
           </section>
+
+          {/* Right Image Section */}
+          <div className="ml-[250px] hidden sm:flex justify-center lg:justify-start">
+            <Image
+              src="/components/phone-illus-1.svg"
+              alt="Who We Are"
+              width={320}
+              height={400}
+              className="w-[225px] xl:w-[320px]"
+            />
+          </div>
         </div>
       </div>
       {/* All Services */}

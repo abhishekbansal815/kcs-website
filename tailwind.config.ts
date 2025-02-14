@@ -46,8 +46,21 @@ const config: Config = {
         "button-sm": ["10px", { lineHeight: "1.5" }], // Default (screens <1024px)
         "button-md": ["16px", { lineHeight: "1.5" }], // For screens >=1024px
       },
+
+      screens: {
+        'h-sm-w-sm': { 'raw': '(max-height: 650px) and (max-width: 768px)' },
+        'h-sm-w-md': { 'raw': '(max-height: 650px) and (min-width: 769px) and (max-width: 1024px)' },
+        'h-sm-w-lg': { 'raw': '(max-height: 650px) and (min-width: 1025px)' },
+        'h-md-w-sm': { 'raw': '(min-height: 651px) and (max-height: 712px) and (max-width: 768px)' },
+        'h-md-w-md': { 'raw': '(min-height: 651px) and (max-height: 712px) and (min-width: 769px) and (max-width: 1024px)' },
+        'h-md-w-lg': { 'raw': '(min-height: 651px) and (max-height: 712px) and (min-width: 1025px)' },
+        'h-lg-w-sm': { 'raw': '(min-height: 713px) and (max-width: 768px)' },
+        'h-lg-w-md': { 'raw': '(min-height: 713px) and (min-width: 769px) and (max-width: 1024px)' },
+        'h-lg-w-lg': { 'raw': '(min-height: 713px) and (min-width: 1025px)' },
+      },
     },
   },
+  variants: {},
   plugins: [
     function ({ addUtilities }: PluginAPI) {
       const newUtilities = {

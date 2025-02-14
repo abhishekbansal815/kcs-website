@@ -103,8 +103,8 @@ const Carousel = () => {
   };
 
   return (
-    <section className="h-[auto] sm:h-[auto] lg:h-[432px] xl:h-[522px] bg-white">
-      <div className="max-w-screen-xl mx-auto mb-6 lg:mb-9 py-[3rem] md:py-[4rem] lg:py-[4rem]">
+    <section className="h-[70vh] bg-white mb-[30vh] md:mb-0 lg:mb-[30vh] xl:mb-0">
+      <div className="max-w-screen-xl m-auto mb-6 lg:mb-9 py-[3rem] md:py-[4rem] lg:py-[4rem]">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div

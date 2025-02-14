@@ -15,7 +15,7 @@ const Header = () => {
   const {lineColor} = colorContext
 
   return (
-    <header className={`bg-primary-blue text-white hidden sm:block ${lineColor} border-b-4 px-4 lg:px-0`}>
+    <header className={`bg-primary-blue text-white hidden sm:block ${lineColor} border-b-2 px-4 lg:px-0`}>
       <div className="py-1.5 px-2 pl-10 lg:pl-[4.5rem] flex items-center justify-between max-w-screen-xl mx-auto">
         <div className="flex items-center space-x-3">
           <i>

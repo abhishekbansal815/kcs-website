@@ -18,6 +18,7 @@ const Engagement: React.FC<EngagementProps> = ({ steps }) => {
 
       {/* Desktop View */}
       <div className="hidden md:block px-6 md:px-12 mt-16">
+        
         <div className="grid grid-cols-4 gap-4 lg:gap-8 items-stretch">
           {steps.map((step, index) => (
             <Card
