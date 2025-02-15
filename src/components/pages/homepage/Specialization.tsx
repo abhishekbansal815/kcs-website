@@ -11,28 +11,29 @@ const Specialization = () => {
       icon: icons.erpSpecialization,
       title: "ERP",
       description:
-        "It is a long established fact that a reader will be distracted by the readable.",
+        // "It is a long established fact that a reader will be distracted by the readable.",
+        "Our solutions streamline your business processes, optimizing resource utilization and enhancing overall productivity.",
       buttonText: "READ MORE",
     },
     {
       icon: icons.crmHome,
       title: "CRM",
       description:
-        "It is a long established fact that a reader will be distracted by the readable.",
+        "We help you build lasting customer relationships, driving growth and fostering customer loyalty.",
       buttonText: "READ MORE",
     },
     {
       icon: icons.cyberHome,
       title: "CYBER SECURITY",
       description:
-        "It is a long established fact that a reader will be distracted by the readable.",
+        "We employ the latest technologies and industry best practices to fortify your digital infrastructure against cyber threats.",
       buttonText: "READ MORE",
     },
     {
       icon: icons.managedServicesHome,
       title: "MANAGED SERVICES",
       description:
-        "It is a long established fact that a reader will be distracted by the readable.",
+        "We take care of the complexities of IT management, allowing you to focus on your core business objectives.",
       buttonText: "READ MORE",
     },
   ];
@@ -234,26 +235,30 @@ const Specialization = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="md:bg-gradient-to-b from-primary-blue/80 to-[#1B1B1B]/90 md:h-[300px] pt-12 pb-24 md:pb-12 relative z-30">
-        <div className="flex flex-col items-center mb-16">
+      <div className="md:bg-gradient-to-b from-primary-blue/80 to-[#1B1B1B]/90 pt-12 pb-24 md:pb-16 relative z-30">
+        {/* <div className="flex flex-col items-center mb-16"> */}
+        <div className="flex flex-col items-center mb-8 md:mb-16 relative z-40">
           <CommonHeader color="text-primary-orange">
             OUR SPECIALIZATION
           </CommonHeader>
         </div>
-        <div className="max-w-screen-xl mx-auto px-6 xl:px-12 lg:h-[300px] md:h-[150px] inset-0 flex items-center justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-12 mb-12 lg:mb-16">
+        {/* <div className="max-w-screen-xl mx-auto px-6 xl:px-12 lg:h-[300px] md:h-[150px] inset-0 flex items-center justify-center"> */}
+        <div className="max-w-screen-xl mx-auto px-4 xl:px-12 flex items-center justify-center">
+          {/* <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-12 mb-12 lg:mb-16"> */}
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 lg:gap-8 w-full mb-16 lg:mb-24">
             {cardsData.map((card, index) => (
               <CardWithPulse
                 key={index}
                 icon={card.icon}
                 title={card.title}
                 description={card.description}
+                className="min-w-[140px]"
               />
             ))}
           </div>
         </div>
       </div>
-      <section className="bg-gradient-to-b from-primary-blue to-[#1B1B1B] text-white py-12 lg:pt-[7rem] md:pt-[4rem] relative z-10">
+      <section className="bg-gradient-to-b from-primary-blue to-[#1B1B1B] text-white py-12 lg:pt-[7rem] md:pt-[4rem] relative z-10 mt-16">
         <div className="max-w-screen-xl mx-auto md:px-12 pb-12">
           <div className="mt-10 relative z-40">
             <PrimaryTab tabs={content} />

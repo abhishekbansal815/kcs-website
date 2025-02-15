@@ -48,6 +48,7 @@ const config: Config = {
       },
 
       screens: {
+        'xs': {'raw': '(max-width: 480px)'},
         'h-sm-w-sm': { 'raw': '(max-height: 650px) and (max-width: 768px)' },
         'h-sm-w-md': { 'raw': '(max-height: 650px) and (min-width: 769px) and (max-width: 1024px)' },
         'h-sm-w-lg': { 'raw': '(max-height: 650px) and (min-width: 1025px)' },
@@ -58,6 +59,11 @@ const config: Config = {
         'h-lg-w-md': { 'raw': '(min-height: 713px) and (min-width: 769px) and (max-width: 1024px)' },
         'h-lg-w-lg': { 'raw': '(min-height: 713px) and (min-width: 1025px)' },
       },
+
+      lineClamp: {
+        3: '3',
+        4: '4',
+      }
     },
   },
   variants: {},

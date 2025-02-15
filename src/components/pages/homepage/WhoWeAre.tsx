@@ -73,7 +73,7 @@ const WhoWeAre = () => {
           />
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center max-w-7xl global-padding">
+        <div className="ml-[120px] relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-12 items-center max-w-7xl global-padding">
           {/* Left Content Section */}
           <section className="space-y-6">
             {/* Header */}
@@ -95,7 +95,7 @@ const WhoWeAre = () => {
             </Typography>
 
             {/* Description */}
-            <Typography as="p">
+            <Typography as="p" className="leading-7">
               Partnering with us means gaining a trusted ally in navigating the
               complexities of IT. Let us empower your business with innovative
               ERP solutions and robust Cyber Security measures, ensuring you not
@@ -105,7 +105,7 @@ const WhoWeAre = () => {
 
             <div className="relative py-4 flex items-center justify-start ">
               {/* CTA Button */}
-              <Button size={"sm"} onClick={() => setOpenModal(!openModal)}>
+              <Button size={"sm"} className="w-1/2" onClick={() => setOpenModal(!openModal)}>
                 <Typography as="span" className="button-text">
                   VIEW ALL SERVICES
                 </Typography>
@@ -120,7 +120,7 @@ const WhoWeAre = () => {
                   }`}
                 />
               </Button>
-              <Button size={"sm"} className="mx-6 px-9i">
+              <Button size={"sm"} className="mx-6 px-9i w-1/2">
                 <Typography as="span" className="button-text">
                   BOOK A DEMO
                 </Typography>
@@ -130,7 +130,7 @@ const WhoWeAre = () => {
           </section>
 
           {/* Right Image Section */}
-          <div className="ml-[250px] hidden sm:flex justify-center lg:justify-start">
+          <div className="ml-[150px] hidden sm:flex justify-center lg:justify-start">
             <Image
               src="/components/phone-illus-1.svg"
               alt="Who We Are"
